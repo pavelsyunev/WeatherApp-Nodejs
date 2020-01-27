@@ -1,0 +1,77 @@
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #272727;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  text-align: center;
+  background-color: white;
+}
+
+.menu {
+  border-bottom: 1px solid #e3b04b;
+  padding-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #272727;
+  padding: 15px;
+}
+
+.weather-content {
+  margin-top: 10px;
+  flex: 2 0px;
+}
+
+.searchTerm {
+  min-width: 65%;
+  border: 1px solid #272727;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.searchTerm:focus {
+  color: #272727;
+}
+
+.searchButton {
+  width: 40px;
+  height: 32px;
+  border: 1px solid #272727;
+  background: #272727;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#message-1 {
+  font-size: 11px;
+}
+
+#message-2 {
+  font-size: 22px;
+}
+
+footer {
+  padding: 15px 0;
+  background-color: #e3b04b;
+}
