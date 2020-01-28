@@ -19,12 +19,14 @@ const forecast = (lat, lon, callback) => {
     } else {
       callback(undefined, {
         forecast:
-          response.body.currently.summary +
-          " sky. Temperature is " +
+          response.body.daily.data[0].summary +
+          " Temperature is " +
           Math.round(response.body.currently.temperature) +
           " C°. Feels like " +
           Math.round(response.body.currently.apparentTemperature) +
-          " C°."
+          " C°. There is a " +
+          response.body.currently.precipProbability +
+          " % chance of ☔"
       });
     }
   });
