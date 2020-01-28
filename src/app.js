@@ -20,7 +20,7 @@ hbs.registerPartials(partialsPath);
 app.get("", (req, res) => {
   res.render("index", {
     title: "🛰️ Weather App",
-    footer: "Made with ❤️"
+    footer: "Made with ❤️ by 🤓 Pavel Syunev"
   });
 });
 
@@ -56,9 +56,10 @@ app.get("/weather", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About this app",
-    text: "This is about text",
-    footer: "Made with ❤️"
+    title: "🛰️ Weather App",
+    text:
+      "This WetherApp is a part of the Node.js course: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/ ",
+    footer: "Made with ❤️ by 🤓 Pavel Syunev"
   });
 });
 
@@ -66,7 +67,7 @@ app.get("/about/*", (req, res) => {
   res.render("404", {
     title: "Page are not found!",
     text: "Page are not found!",
-    footer: "Made with LOVE"
+    footer: "Made with ❤️ by 🤓 Pavel Syunev"
   });
 });
 
@@ -74,7 +75,7 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "Page are not found! 404",
     text: "Page are not found! 404",
-    footer: "Made with LOVE"
+    footer: "Made with ❤️ by 🤓 Pavel Syunev"
   });
 });
 
